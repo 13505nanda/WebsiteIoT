@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feeding Schedule</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jadwal Pemberian Makanan</h1>
+
+    <div class="form-group">
+      <label for="animal">Pilih Hewan:</label>
+      <select id="animal">
+        <option value="cats">Kucing</option>
+        <option value="dogs">Anjing</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Masukkan Usia (bulan):</label>
+      <input type="number" id="age" placeholder="Masukkan usia hewan">
+    </div>
+
+    <button id="getSchedule">Tampilkan Jadwal</button>
+    <button id="feedNow">Berikan Makanan</button> <!-- Tambahan tombol -->
+    <div id="output" class="output"></div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
